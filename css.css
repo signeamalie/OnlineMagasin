@@ -1,0 +1,406 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Define variables in the :root */
+ :root {
+   --contrast: rgb(0, 0, 0);
+   --backgr: #ffffff;
+ }
+
+/* Use your variables on elements */
+ main {
+   color: var(--contrast);
+   background-color: var(--backgr);
+   font-family: 'Poppins', sans-serif;
+ }
+
+ 
+
+a {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  text-decoration: none;
+  }
+  
+
+
+/* forside billede */
+#appelsin { 
+  height: 50vh;
+  width: 100%;
+  background-image: url("../images/vitaminc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+}
+
+/* tekst på forside billede */
+.tekst-i-hojre-hjorne {
+  position: absolute; 
+  font-family: 'Poppins', sans-serif;
+  font-size: x-large;
+  top: 55%;
+  bottom: 0; 
+  right: 30%; 
+  transform: translateX(50%); 
+  padding: 10px; 
+  color: #10008D; 
+  text-align: center; 
+  max-width: 45%; 
+}
+
+
+/* forside billede */
+#hudplejebillede { 
+  height: 85vh;
+  width: 100%;
+  background-image: url("../images/hudpleje.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+}
+
+/* tekst på forside billede */
+.tekst-i-venstre {
+  position: absolute; 
+  font-family: 'Poppins', sans-serif;
+  font-size: x-large;
+  top: 40%; 
+  left: 0; 
+  transform: translateY(-50%); 
+  padding: 10px; 
+  color: #10008D; 
+  text-align: left; 
+  max-width: 45%; 
+}
+
+
+
+/* tekst på actionside */
+h1 {  
+  font-family: 'Poppins', sans-serif;
+  text-align: center; 
+ color:#10008D;
+ font-size: x-large;
+}
+
+/* h2 tekst på forside */
+.hejh3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: larger;
+  margin-left: 23.5%; 
+  text-align: left; 
+  text-indent: 0; 
+  max-width: 55%;
+  color:#10008D;
+  }
+
+  /* p tekst på forside */
+  .hej4 { 
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    margin-left: 23.5%; 
+    text-align: left; 
+    text-indent: 0; 
+    max-width: 55%;
+    color:#10008D;
+   }
+
+
+   /* h2 tekst på forside */
+h2{  
+  font-family: 'Poppins', sans-serif;
+  text-align: center; 
+  max-width: 50%; 
+  margin: 0 auto; 
+}
+ 
+/* flexcontainer til header på alle sider */
+     .flex-container {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      background-color: #f9f7e7;
+      padding: 10px;
+      max-height: 100px; 
+
+    }
+    
+/* knapper i header */
+    .buttonClass {
+      background-color: #ffffff00;
+      color: rgb(7, 2, 49);
+      padding: 4px 16px; 
+      border: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      cursor: pointer; 
+      margin: 80px; 
+    }
+
+/* knapper i header, effekt */
+.buttonClass:hover {
+  color:#10008D; 
+}
+
+/* PepCee logo */
+.logo {
+  max-width: 150px; 
+  max-height: 150px; 
+  height: 150%; 
+  width: 150%; 
+}
+
+/* footer på alle sider */
+footer {
+  font-family: 'Poppins', sans-serif;
+  font-size: small;
+  text-align: center;
+  background-color: #f9f7e7;
+  color: rgb(0, 0, 0);
+  padding: 20px 20px 0;
+  width: 100%;
+}
+
+/* justeringer på footer */
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: stretch;
+}
+
+/* justeringer på p tekst i footer*/
+.footer-container p {
+  margin: 10px; 
+  white-space: nowrap;
+}
+
+/* form til nyhedsbrev */
+form.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px; 
+  width: 60%;
+  max-width: 300x;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* størrelse på input */
+form.form-container input[type="text"], 
+form.form-container input[type="date"],
+form.form-container input[type="submit"] {
+  width: 70%;
+  padding: 10px; 
+
+}
+
+/* submit knap */
+form.form-container input[type="submit"] {
+  border: none; 
+  background-color: #F78637; 
+  color: rgb(255, 255, 255); 
+  font-size: small;
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+
+/* p tekst på forside&videnskab bag */
+  .unghud { 
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    text-align: left;
+    color: rgb(101, 98, 98);
+    margin-left: 23.5%;
+  }
+  
+
+/* p tekst i footer */
+   p {  
+    font-family: 'Poppins', sans-serif;
+  text-align: center; 
+  max-width: 50%; 
+  margin: 0 auto; 
+   }
+
+/* billede på hudtype side */
+  .peptidebillede {  
+    max-width: 60%; 
+    max-height: 60vh; 
+    display: block;
+    margin: 0 auto; 
+  }
+
+
+/* billede på hudtype side */
+    .hudtype-container {
+      background-image: url("../images/hudtyper.jpg");
+      background-size: cover; 
+      background-position: center; 
+      height: 50vh; 
+      display: flex;
+    align-items: flex-end; 
+    justify-content: flex-end; 
+    padding: 20px; 
+    }
+    
+  /* h1 tekst på hudtype billede */
+    .hudtypeOverskrift {
+      font-family: 'Poppins', sans-serif;
+      font-size: xx-large;
+      color: #10008D;
+      margin: 0; /
+    }
+
+/* billede på videnskab side */
+  .videnskab-container {
+    background-image: url("../images/videnskabbag.jpg");
+    background-size: cover; 
+    background-position: center; 
+    height: 50vh; 
+    display: flex;
+  align-items: flex-end; 
+  justify-content: flex-end;
+  padding: 20px;
+  }
+  
+/* h1 tekst på videnskab billede */
+  .videnskabsOverskrift {
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    color: #F78637; 
+    margin: 0;
+  }
+
+
+/* flex container på action side */
+     .nyhedsbrev-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 85vh; 
+  width: 100%;
+  background-image: url("../images/hudplejenyhedsbrev.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* p tekst i flex container på action side */
+.nyhedsbrev-tekst {
+  position: absolute;
+  font-size: medium;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #10008D;
+  text-align: center;
+}
+
+/* nederste billede på forside */
+#appelsinhudpleje-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  background-image: url("../images/appelsinhudpleje.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* knap på action side fører til forside */
+    .tilbage-knap {
+      display: inline-block; 
+      padding: 10px 20px;
+      margin: 20px auto;
+      background-color: #F78637;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      text-decoration: none; 
+      cursor: pointer;
+    }
+    
+    /* tilbage knap effekt */
+    .tilbage-knap:hover {
+      background-color: #e57535;
+    }
+
+/* p tekst på hudtype side */
+    .hej2 { 
+      font-family: 'Poppins', sans-serif;
+      margin-left: 23.5%; 
+      text-align: left; 
+      text-indent: 0; 
+      max-width: 55%;
+     }
+
+     /* p tekst på hudtype & videnskab side */
+     .hej3 { 
+      font-family: 'Poppins', sans-serif;
+      margin-left: 23.5%; 
+      text-align: left; 
+      text-indent: 0; 
+      max-width: 55%;
+     }
+
+     /* h2 tekst på hudtype & videnskab side */
+     .hejh2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: large;
+      margin-left: 23.5%; 
+      text-align: left; 
+      text-indent: 0; 
+      max-width: 55%;
+      }
+
+      /* appelsin billede på videnskab side*/
+      .appelsin1 {
+        max-width: 55%; 
+        max-height: 55vh; 
+        display: block;
+        margin: 0 auto; 
+      }
+
+
+      /* kildehenvisning billeder*/
+      .Kilde {
+        font-family: 'Poppins', sans-serif;
+        font-size: small;
+        margin-left: 23.5%; 
+        text-align: left; 
+        text-indent: 0; 
+        max-width: 55%;
+        color: #605d5d;
+      }
+
+        /* kildehenvisning billeder*/
+      .Kilde1 {
+        position: absolute; 
+        bottom: 0; 
+        right: 0; 
+        font-family: 'Poppins', sans-serif;
+        font-size: small;
+        margin-left: 0; 
+        text-align: left;
+        max-width: 55%;
+        color: #605d5d;
+      }
